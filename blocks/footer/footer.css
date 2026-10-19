@@ -1,20 +1,55 @@
+/* --- Footer Layout & Dark Theme --- */
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: #0b1120;
+  color: #94a3b8;
+  padding: 60px 20px 20px 20px;
+  font-size: 15px;
 }
 
-footer .footer > div {
-  margin: auto;
+.technowp-footer-wrapper {
   max-width: 1200px;
-  padding: 40px 24px 24px;
+  margin: 0 auto;
 }
 
-footer .footer p {
+.technowp-footer-widgets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.technowp-footer-widgets h3, 
+.technowp-footer-widgets h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.technowp-footer-widgets ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
-  }
+.technowp-footer-widgets li {
+  margin-bottom: 12px;
+}
+
+.technowp-footer-widgets a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.technowp-footer-widgets a:hover {
+  color: #2563eb;
+}
+
+/* --- Footer Bottom / Copyright --- */
+.technowp-footer-bottom {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
 }

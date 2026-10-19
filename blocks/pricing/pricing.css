@@ -1,0 +1,46 @@
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.pricing-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.pricing-card.popular {
+  border-color: #2563eb;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-price {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 20px 0;
+}
+
+.pricing-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pricing-features li {
+  padding: 8px 0;
+  color: #64748b;
+  border-bottom: 1px solid #f1f5f9;
+}
